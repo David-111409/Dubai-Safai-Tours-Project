@@ -31,10 +31,8 @@ nav .item .nav-link {
   font-size: 21px;
   font-weight: 500;
   color: var(--primary-text-color);
-}
-
-nav .item .nav-link i {
-  margin-right: 4px;
+  display: flex;
+  gap: 4px;
 }
 
 .nav-list {
@@ -45,9 +43,11 @@ nav .item .nav-link i {
 .item .nav-link:hover {
   color: rgb(80, 5, 150);
 }
+
 .nav-menu {
   display: none;
 }
+
 @media (max-width: 720px) {
   .header {
     justify-content: space-between;
@@ -63,13 +63,10 @@ nav .item .nav-link i {
     right: 0;
     width: 100%;
     background-color: white;
-    padding-left: 50px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    transition: all 1s ease;
-    transition: all 0.8s ease;
+    padding: 15px 0 15px 50px;
+    transition: clip-path 0.8s ease;
   }
-  
+
   .nav-list.open {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
