@@ -4,7 +4,7 @@ const Hero = () => {
     <div className="hero">
       <div className="input-box">
         <div className="input-part">
-          <i class="bi bi-search"></i>
+          <i className="bi bi-search"></i>
           <input
             id="search-input"
             type="text"
