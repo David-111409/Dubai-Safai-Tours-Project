@@ -8,7 +8,7 @@ import TourDetails from './components/tour-item/TourDetails';
 import { ToastContainer } from 'react-toastify';
 import Footer from './components/footer/Footer';
 import 'react-toastify/dist/ReactToastify.css';
-
+import ScrollToTop from './ScrollToTop';
 function App() {
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
         closeOnClick
         pauseOnHover={false}
       />
-
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
